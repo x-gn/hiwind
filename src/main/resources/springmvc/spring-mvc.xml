@@ -19,10 +19,12 @@
    
       
    
-	<mvc:resources location="/META-INF/publicResources/" mapping="/res/**"/>
 
 
-	<!-- <mvc:resources location="/img/" mapping="/img/**"/> <mvc:resources 
+	<!--
+		<mvc:resources location="/META-INF/publicResources/" mapping="/res/**"/>
+	
+	 <mvc:resources location="/img/" mapping="/img/**"/> <mvc:resources 
 		location="/js/" mapping="/js/**"/> <mvc:default-servlet-handler/> <mvc:resources 
 		location="/WEB-INF/img/" mapping="/img/**"/> <mvc:resources location="/WEB-INF/js/" 
 		mapping="/js/**"/> <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" 
