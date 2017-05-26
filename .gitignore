@@ -19,7 +19,7 @@ dependency-reduced-pom.xml
 # Eclipse Project Files
 
 .classpath
-.project
+#.project
 .settings/
 
 # IntelliJ IDEA Files
