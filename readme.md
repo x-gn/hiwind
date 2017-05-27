@@ -2,7 +2,8 @@
 http://www.cnblogs.com/GarfieldEr007/p/5746263.html
 
 
-
+  use test;
+  
     CREATE TABLE `t_user` (  
       `USER_ID` int(11) NOT NULL AUTO_INCREMENT,  
       `USER_NAME` char(30) NOT NULL,  
@@ -10,7 +11,7 @@ http://www.cnblogs.com/GarfieldEr007/p/5746263.html
       `USER_EMAIL` char(30) NOT NULL,  
       PRIMARY KEY (`USER_ID`),  
       KEY `IDX_NAME` (`USER_NAME`)  
-    ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8  
+    ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 ; 
 
     
     
