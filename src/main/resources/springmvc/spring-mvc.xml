@@ -11,14 +11,22 @@
     http://www.springframework.org/schema/mvc  
     http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 
-	<!-- 扫描controller（controller层注入） -->
-	<context:component-scan base-package="com.zz.controller" />
 
 	<mvc:annotation-driven />
-	
-	<mvc:resources location="META-INF/publicResources/"  mapping="/res/**" />
-	
+	<mvc:resources location="META-INF/publicResources/" mapping="/res/**" />
 
+
+	<!-- 扫描controller（controller层注入） -->
+	<context:component-scan base-package="com.zz.controller" />
+	<mvc:annotation-driven />
+
+	<!-- 对特定路径拦截 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/page/*" />
+			<bean class="com.zz.interceptor.BaseInterceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
 
 	<!-- <mvc:resources location="/img/" mapping="/img/**"/> <mvc:resources 
 		location="/js/" mapping="/js/**"/> <mvc:default-servlet-handler/> <mvc:resources 
@@ -32,7 +40,5 @@
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/page/" p:suffix=".jsp" />
-
-
 
 </beans>  
