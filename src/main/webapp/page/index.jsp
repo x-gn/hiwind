@@ -5,6 +5,10 @@
  ${user.userId}<br>  
  ${user.userName}<br>  
  ${user.userPassword}<br>  
- ${user.userEmail}<br>     
+ ${user.userEmail}<br>    
+  
+  <img src="img/1.jpg"/>
+ <br/>
+ <img src="res/2.png"/> 
 </body>  
 </html> 

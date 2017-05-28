@@ -15,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 	    @Override
 	    public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
+	        System.out.println("preHandle 执行！！！");  
 	        logger.info("执行Action前先判断权限");
 	        return true;
 	    }
@@ -22,12 +23,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 	    @Override
 	    public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
-	        logger.info("生成视图前，可以改model和视图");
+	    	System.out.println("postHandle 执行！！！");  
+	    	logger.info("生成视图前，可以改model和视图");
 	    }
 
 
 	    @Override
 	    public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
+	        System.out.println("afterCompletion 执行！！！");  
 	        logger.info("生成视图前，可以改model和视图");
 	    }
 	}

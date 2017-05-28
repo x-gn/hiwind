@@ -23,7 +23,7 @@
 	<!-- 对特定路径拦截 -->
 	<mvc:interceptors>
 		<mvc:interceptor>
-			<mvc:mapping path="/page/*" />
+			<mvc:mapping path="/res/*" />
 			<bean class="com.zz.interceptor.BaseInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>
