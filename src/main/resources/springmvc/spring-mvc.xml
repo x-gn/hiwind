@@ -12,9 +12,11 @@
     http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 
 
-	<mvc:annotation-driven />
-	<mvc:resources location="META-INF/publicResources/" mapping="/res/**" />
+	<mvc:default-servlet-handler/>
 
+	<mvc:annotation-driven />
+	<mvc:resources location="/img/" mapping="/img/**" />
+	<mvc:resources location="META-INF/publicResources/" mapping="/res/**" />
 
 	<!-- 扫描controller（controller层注入） -->
 	<context:component-scan base-package="com.zz.controller" />
