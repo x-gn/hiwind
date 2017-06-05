@@ -9,6 +9,9 @@
  ${user.userEmail}<br>    
   
   <img src="img/1.jpg"/>
+  <img src="https://wochu.oss-cn-hangzhou.aliyuncs.com/upload/e25915ba-4f26-4e7b-b310-a7f734c26e36.jpg 
+    "/>
+  
  <br/>
  <img src="res/2.png"/> 
 </body>  
